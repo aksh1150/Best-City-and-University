@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>Information of Canada</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="city.html" style="color:black">CITY</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a style="color:black" href="index.html">Home</a></li>
+            <li><a style="color:black" href="aboutus.html">About US</a></li>
+            <li><a style="color:black" href="contactus.html">Contact US</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+	<div id="citywrap">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3">
+				</div>
+			</div><! --/row -->
+	    </div> <!-- /container -->
+	</div><! --/aboutwrap -->
+
+	
+<!-- Search form and table of city data -->			
+			
+	
+	
+<form style="box-sizing: border-box; padding: 1em; background: #eee;">
+    <label class="searchlabel" for="search">Search city here..</label>
+    <input id="search" type="text" />
+</form>
+<script>
+$("#search").keyup(function () {
+    var value = this.value.toLowerCase().trim();
+
+    $("table tr").each(function (index) {
+        if (!index) return;
+        $(this).find("td").each(function () {
+            var id = $(this).text().toLowerCase().trim();
+            var not_found = (id.indexOf(value) == -1);
+            $(this).closest('tr').toggle(!not_found);
+            return not_found;
+        });
+    });
+});
+</script>
+<table class="table table-hover" data-filter="search">
+    <thead>
+        <tr>
+            <th class="OverallRank" data-type="numeric">Overall Rank 2016</th>
+            
+            <th class="name" data-type="alpha" data-hide="all"> Name </th>
+           
+            <th class="province" data-type="alpha" data-hide="all"> Province </th>
+            
+            
+            <th class="citysize" data-type="alpha" data-hide="all"> City Type </th>
+           
+            <th class="lowunemployment" data-type="alpha" data-hide="all"> Low Unemployment </th>
+           
+            <th class="highincome" data-type="alpha" data-hide="all"> High Incomes </th>
+           
+           
+            <th class="2" data-type="alpha" data-hide="all"> Low-Priced Homes</th>
+            <th class="affordavlehousing" data-type="alpha" data-hide="all"> Affordable Housing </th>
+           
+            <th class="3" data-type="alpha" data-hide="all"> Affordable Rent</th>
+            <th class="accesstohealthcare" data-type="alpha" data-hide="all"> Access To Health Care </th>
+            
+            
+           
+           
+          
+            <th class="goodweather" data-type="alpha" data-hide="all"> Good Weather </th>
+           
+           
+            <th class="population" data-type="numeric" data-hide="all"> Population </th>
+           
+            <th class="estunemployment" data-type="numeric" data-hide="all"> Estimated Unemployment Rate (%) </th>
+            
+            <th class="5yearcrime" data-type="numeric" data-hide="all"> Crime Rate &#8211; 5-Year Change </th>
+            
+            <th class="crimeindex" data-type="numeric" data-hide="all"> Crime Severity Index </th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="OverallRank"> 1 </td>          
+            <td class="name"> Ottawa </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Large </td>          
+            <td class="lowunemployment"> </td>
+            <td class="highincome"> ✓ </td>
+  <td class="2"> </td>
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td>
+            <td class="accesstohealthcare"> </td>
+            <td class="good"> ✓ </td>
+         <td class="population"> 961,921 </td>          
+            <td class="estunemployment"> 6.6 </td>        
+            <td class="5yearcrime"> -27.5% </td> 
+            <td class="crimeindex"> 45.8 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 2 </td>          
+            <td class="name"> Burlington </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Medium </td>          
+            <td class="lowunemployment"> ✓ </td>
+            <td class="highincome"> ✓ </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good"> ✓ </td> <!--wheather-->
+         <td class="population"> 192,294 </td>          
+            <td class="estunemployment"> 4.9 </td>        
+            <td class="5yearcrime"> -31.3% </td> 
+            <td class="crimeindex"> 24.1 </td>
+           
+        </tr>
+			<tr>
+            <td class="OverallRank"> 3 </td>          
+            <td class="name"> Oakville </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Medium </td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome"> ✓ </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good"> ✓ </td> <!--wheather-->
+         <td class="population"> 202,299 </td>          
+            <td class="estunemployment"> 6.0 </td>        
+            <td class="5yearcrime"> -31.3% </td> 
+            <td class="crimeindex"> 24.1 </td>
+           
+        </tr>
+	
+		<tr>
+            <td class="OverallRank"> 4 </td>          
+            <td class="name"> St. Albert </td>           
+            <td class="province"> Atla. </td>                  
+            <td class="citysize"> Small </td>          
+            <td class="lowunemployment">✓  </td>
+            <td class="highincome"> ✓ </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing">✓ </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare">✓ </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 72,153 </td>          
+            <td class="estunemployment"> 5.1 </td>        
+            <td class="5yearcrime"> -45.3% </td> 
+            <td class="crimeindex"> 38.9 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 5 </td>          
+            <td class="name"> Boucherville </td>           
+            <td class="province"> Oue. </td>                  
+            <td class="citysize"> Small </td>          
+            <td class="lowunemployment">✓  </td>
+            <td class="highincome"> ✓ </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3">✓ </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 42,916 </td>          
+            <td class="estunemployment"> 3.1 </td>        
+            <td class="5yearcrime"> -32.2% </td> 
+            <td class="crimeindex"> 59.2 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 6 </td>          
+            <td class="name"> Blainville </td>           
+            <td class="province"> Oue. </td>                  
+            <td class="citysize"> Small </td>          
+            <td class="lowunemployment">✓  </td>
+            <td class="highincome"> ✓ </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing">✓ </td>
+            <td class="3">✓ </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 58,169 </td>          
+            <td class="estunemployment"> 2.9 </td>        
+            <td class="5yearcrime"> -20.0% </td> 
+            <td class="crimeindex"> 41.4 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 7 </td>          
+            <td class="name"> West Vancouver </td>           
+            <td class="province"> B.C. </td>                  
+            <td class="citysize"> Small </td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 45,798 </td>          
+            <td class="estunemployment"> 5.5 </td>        
+            <td class="5yearcrime"> -26.9% </td> 
+            <td class="crimeindex"> 44.6 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 8 </td>          
+            <td class="name"> North Vancouver </td>           
+            <td class="province"> B.C. </td>                  
+            <td class="citysize"> Small </td>          
+            <td class="lowunemployment">✓  </td>
+            <td class="highincome"> ✓ </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3">✓ </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 91,035 </td>          
+            <td class="estunemployment"> 4.7 </td>        
+            <td class="5yearcrime"> -26.2% </td> 
+            <td class="crimeindex"> 39.7 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 9 </td>          
+            <td class="name"> Levis </td>           
+            <td class="province"> Que. </td>                  
+            <td class="citysize"> Medium </td>          
+            <td class="lowunemployment">✓  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3">✓ </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 146,624 </td>          
+            <td class="estunemployment"> 5.0 </td>        
+            <td class="5yearcrime"> -19.5% </td> 
+            <td class="crimeindex"> 34.7 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 10 </td>          
+            <td class="name"> Waterloo </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Medium </td>          
+            <td class="lowunemployment">✓  </td>
+            <td class="highincome"> ✓ </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 108,728 </td>          
+            <td class="estunemployment"> 5.2 </td>        
+            <td class="5yearcrime"> -21.3% </td> 
+            <td class="crimeindex"> 54.9 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 11 </td>          
+            <td class="name"> Port Moody </td>           
+            <td class="province"> B.C. </td>                  
+            <td class="citysize"> Small </td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome"> ✓ </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing">✓ </td>
+            <td class="3">✓ </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 36,265 </td>          
+            <td class="estunemployment"> 5.5 </td>        
+            <td class="5yearcrime"> -34.1% </td> 
+            <td class="crimeindex"> 35.7 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 12 </td>          
+            <td class="name"> Quebec </td>           
+            <td class="province"> Que. </td>                  
+            <td class="citysize"> Large </td>          
+            <td class="lowunemployment">✓  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare">✓ </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 546,544 </td>          
+            <td class="estunemployment"> 3.5 </td>        
+            <td class="5yearcrime"> -20.9% </td> 
+            <td class="crimeindex"> 49.9 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 13 </td>          
+            <td class="name"> Saanich </td>           
+            <td class="province"> B.C. </td>                  
+            <td class="citysize"> Medium </td>          
+            <td class="lowunemployment"> ✓ </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare">✓ </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 115,401 </td>          
+            <td class="estunemployment"> 5.2 </td>        
+            <td class="5yearcrime"> -35.9% </td> 
+            <td class="crimeindex"> 41.1 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 14 </td>          
+            <td class="name"> Delta </td>           
+            <td class="province"> B.C. </td>                  
+            <td class="citysize"> Medium </td>          
+            <td class="lowunemployment"> ✓ </td>
+            <td class="highincome"> ✓ </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 107,445 </td>          
+            <td class="estunemployment"> 4.9 </td>        
+            <td class="5yearcrime"> -22.9% </td> 
+            <td class="crimeindex"> 57.0 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 15 </td>          
+            <td class="name"> Stratford </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Small </td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare">✓ </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 32,665 </td>          
+            <td class="estunemployment"> 5.6 </td>        
+            <td class="5yearcrime"> -23.2% </td> 
+            <td class="crimeindex"> 55.5 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 16 </td>          
+            <td class="name"> Rimouski </td>           
+            <td class="province"> Que. </td>                  
+            <td class="citysize"> Small</td>          
+            <td class="lowunemployment"> ✓ </td>
+            <td class="highincome">  </td>
+  <td class="2">✓ </td> <!--low priced home-->
+            <td class="affordavlehousing">✓ </td>
+            <td class="3">✓ </td> <!--affortable rent-->
+            <td class="accesstohealthcare">✓ </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 53,842 </td>          
+            <td class="estunemployment"> 5.2 </td>        
+            <td class="5yearcrime"> -17.4% </td> 
+            <td class="crimeindex"> 41.9 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 17 </td>          
+            <td class="name"> Gatineau </td>           
+            <td class="province"> Que. </td>                  
+            <td class="citysize"> Medium</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good">✓  </td> <!--wheather-->
+         <td class="population"> 281,900 </td>          
+            <td class="estunemployment"> 5.5 </td>        
+            <td class="5yearcrime"> -14.2% </td> 
+            <td class="crimeindex"> 59.9 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 18 </td>          
+            <td class="name"> Bracebridge </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Small</td>          
+            <td class="lowunemployment"> ✓ </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare">✓ </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 16,593 </td>          
+            <td class="estunemployment"> 3.2 </td>        
+            <td class="5yearcrime"> -24.0% </td> 
+            <td class="crimeindex"> 39.3 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 19 </td>          
+            <td class="name"> Aurora </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Small</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">✓  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good">✓  </td> <!--wheather-->
+         <td class="population"> 59,475 </td>          
+            <td class="estunemployment"> 6.6 </td>        
+            <td class="5yearcrime"> -22.1% </td> 
+            <td class="crimeindex"> 30.7 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 20 </td>          
+            <td class="name"> Vaughan </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Medium</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">✓  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good">✓  </td> <!--wheather-->
+         <td class="population"> 322,525 </td>          
+            <td class="estunemployment"> 5.7 </td>        
+            <td class="5yearcrime"> -22.1% </td> 
+            <td class="crimeindex"> 30.7 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 21 </td>          
+            <td class="name"> Richmond Hill </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Medium</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">✓  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good">✓  </td> <!--wheather-->
+         <td class="population"> 207,709 </td>          
+            <td class="estunemployment"> 5.9 </td>        
+            <td class="5yearcrime"> -22.1% </td> 
+            <td class="crimeindex"> 30.7 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 22 </td>          
+            <td class="name"> Winnipeg </td>           
+            <td class="province"> Man. </td>                  
+            <td class="citysize"> Large</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare">✓ </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 796,364 </td>          
+            <td class="estunemployment"> 6.3 </td>        
+            <td class="5yearcrime"> -41.5% </td> 
+            <td class="crimeindex"> 85.4 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 23 </td>          
+            <td class="name"> London </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Large</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare">✓ </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 509,605 </td>          
+            <td class="estunemployment"> 6.2 </td>        
+            <td class="5yearcrime"> -17.5% </td> 
+            <td class="crimeindex"> 75.3 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 24 </td>          
+            <td class="name"> Guelph </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Medium</td>          
+            <td class="lowunemployment"> ✓ </td>
+            <td class="highincome"> ✓ </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 152,747 </td>          
+            <td class="estunemployment"> 4.8 </td>        
+            <td class="5yearcrime"> -22.5% </td> 
+            <td class="crimeindex"> 47.7 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 25 </td>          
+            <td class="name"> Regina </td>           
+            <td class="province"> Sask. </td>                  
+            <td class="citysize"> Medium</td>          
+            <td class="lowunemployment"> ✓ </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 241,942 </td>          
+            <td class="estunemployment"> 5.2 </td>        
+            <td class="5yearcrime"> -26.3% </td> 
+            <td class="crimeindex"> 108.1 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 25 </td>          
+            <td class="name"> Markham </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Medium</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome"> ✓ </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good"> ✓ </td> <!--wheather-->
+         <td class="population"> 337,816 </td>          
+            <td class="estunemployment"> 6.9 </td>        
+            <td class="5yearcrime"> -22.1% </td> 
+            <td class="crimeindex"> 30.7 </td>
+           
+        </tr>
+			<tr>
+            <td class="OverallRank"> 25 </td>          
+            <td class="name"> Markham </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Medium</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome"> ✓ </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good"> ✓ </td> <!--wheather-->
+         <td class="population"> 337,816 </td>          
+            <td class="estunemployment"> 6.9 </td>        
+            <td class="5yearcrime"> -22.1% </td> 
+            <td class="crimeindex"> 30.7 </td>
+           
+        </tr>
+		 </tr>
+			<tr>
+            <td class="OverallRank"> 25 </td>          
+            <td class="name"> Markham </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Medium</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome"> ✓ </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good"> ✓ </td> <!--wheather-->
+         <td class="population"> 337,816 </td>          
+            <td class="estunemployment"> 6.9 </td>        
+            <td class="5yearcrime"> -22.1% </td> 
+            <td class="crimeindex"> 30.7 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 26 </td>          
+            <td class="name"> Peterborough </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Medium</td>          
+            <td class="lowunemployment">✓  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good"> ✓ </td> <!--wheather-->
+         <td class="population"> 124,332 </td>          
+            <td class="estunemployment"> 4.0 </td>        
+            <td class="5yearcrime"> -38.8% </td> 
+            <td class="crimeindex"> 64.4 </td>
+           
+        </tr>
+				<tr>
+            <td class="OverallRank"> 27 </td>          
+            <td class="name"> Toronto </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Large</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good"> ✓ </td> <!--wheather-->
+         <td class="population"> 2,849,222 </td>          
+            <td class="estunemployment"> 8.0 </td>        
+            <td class="5yearcrime"> -23.8% </td> 
+            <td class="crimeindex"> 56.0 </td>
+           
+        </tr>
+				<tr>
+            <td class="OverallRank"> 28 </td>          
+            <td class="name"> Vancouver </td>           
+            <td class="province"> B.C. </td>                  
+            <td class="citysize"> Large</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 657,146 </td>          
+            <td class="estunemployment"> 5.5 </td>        
+            <td class="5yearcrime"> -11.7% </td> 
+            <td class="crimeindex"> 106.2 </td>
+           
+        </tr>
+				<tr>
+            <td class="OverallRank"> 29 </td>          
+            <td class="name"> Kingston </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Medium</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 170,126 </td>          
+            <td class="estunemployment"> 8.5 </td>        
+            <td class="5yearcrime"> -1.2% </td> 
+            <td class="crimeindex"> 61.4 </td>
+           
+        </tr>
+				<tr>
+            <td class="OverallRank"> 30 </td>          
+            <td class="name"> Edmonton </td>           
+            <td class="province"> Alta. </td>                  
+            <td class="citysize"> Large</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 961,016 </td>          
+            <td class="estunemployment"> 7.2 </td>        
+            <td class="5yearcrime"> -18.7% </td> 
+            <td class="crimeindex"> 97.0 </td>
+           
+        </tr>
+				<tr>
+            <td class="OverallRank"> 31 </td>          
+            <td class="name"> Mississauga </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Large</td>          
+            <td class="lowunemployment"> </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good"> ✓ </td> <!--wheather-->
+         <td class="population"> 788,469 </td>          
+            <td class="estunemployment"> 7.5 </td>        
+            <td class="5yearcrime"> -22.6% </td> 
+            <td class="crimeindex"> 40.8 </td>
+           
+        </tr>
+				<tr>
+            <td class="OverallRank"> 32 </td>          
+            <td class="name"> Sherbrooke </td>           
+            <td class="province"> Que. </td>                  
+            <td class="citysize"> Medium</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> ✓</td> <!--affortable rent-->
+            <td class="accesstohealthcare">✓ </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 215,632 </td>          
+            <td class="estunemployment"> 6.0 </td>        
+            <td class="5yearcrime"> -22.7% </td> 
+            <td class="crimeindex"> 52.8 </td>
+           
+        </tr>
+				<tr>
+            <td class="OverallRank"> 32 </td>          
+            <td class="name"> Sherbrooke </td>           
+            <td class="province"> Que. </td>                  
+            <td class="citysize"> Medium</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> ✓</td> <!--affortable rent-->
+            <td class="accesstohealthcare">✓ </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 215,632 </td>          
+            <td class="estunemployment"> 6.0 </td>        
+            <td class="5yearcrime"> -22.7% </td> 
+            <td class="crimeindex"> 52.8 </td>
+           
+        </tr>
+		
+				<tr>
+            <td class="OverallRank"> 33 </td>          
+            <td class="name"> Barrie </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Medium</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome"> ✓ </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good"> ✓ </td> <!--wheather-->
+         <td class="population"> 205,572 </td>          
+            <td class="estunemployment"> 6.1 </td>        
+            <td class="5yearcrime"> -29.6% </td> 
+            <td class="crimeindex"> 48.7 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 34 </td>          
+            <td class="name"> Hamilton </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Large</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> ✓</td>
+            <td class="good"> ✓ </td> <!--wheather-->
+         <td class="population"> 555,841 </td>          
+            <td class="estunemployment"> 7.4 </td>        
+            <td class="5yearcrime"> -27.4% </td> 
+            <td class="crimeindex"> 59.7 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 35 </td>          
+            <td class="name"> Kitchener </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Medium</td>          
+            <td class="lowunemployment">✓  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> ✓</td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 242,009 </td>          
+            <td class="estunemployment">5.1 </td>        
+            <td class="5yearcrime"> -21.3% </td> 
+            <td class="crimeindex"> 54.9 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 36 </td>          
+            <td class="name"> Calgary </td>           
+            <td class="province"> Alta. </td>                  
+            <td class="citysize"> Large</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">✓  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 1,465,539 </td>          
+            <td class="estunemployment">7.9 </td>        
+            <td class="5yearcrime"> -23.1% </td> 
+            <td class="crimeindex"> 59.6 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 37 </td>          
+            <td class="name"> Saskatoon </td>           
+            <td class="province"> Sask. </td>                  
+            <td class="citysize"> Medium</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare">✓ </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 306,794 </td>          
+            <td class="estunemployment">6.8 </td>        
+            <td class="5yearcrime"> -22.1% </td> 
+            <td class="crimeindex"> 119.0 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 38 </td>          
+            <td class="name"> Richmond </td>           
+            <td class="province"> B.C. </td>                  
+            <td class="citysize"> Medium</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 207,549 </td>          
+            <td class="estunemployment">5.5 </td>        
+            <td class="5yearcrime"> -7.7% </td> 
+            <td class="crimeindex"> 90.0 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 39 </td>          
+            <td class="name"> Halifax </td>           
+            <td class="province"> N.S. </td>                  
+            <td class="citysize"> Large</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare">✓ </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 416,070 </td>          
+            <td class="estunemployment">7.4 </td>        
+            <td class="5yearcrime"> -25.1% </td> 
+            <td class="crimeindex"> 65.7 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 40 </td>          
+            <td class="name"> Sudbury </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Medium</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"> </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 166,694 </td>          
+            <td class="estunemployment">8.1 </td>        
+            <td class="5yearcrime"> -17.0% </td> 
+            <td class="crimeindex"> 61.3 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 41 </td>          
+            <td class="name"> Thunder Bay </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Medium</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare">✓ </td>
+            <td class="good">  </td> <!--wheather-->
+         <td class="population"> 126,592 </td>          
+            <td class="estunemployment">6.0 </td>        
+            <td class="5yearcrime"> -30.0% </td> 
+            <td class="crimeindex"> 92.2 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 42 </td>          
+            <td class="name"> Cambridge </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Medium</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"></td>
+            <td class="good"> ✓  </td> <!--wheather-->
+         <td class="population"> 138,557 </td>          
+            <td class="estunemployment">6.0 </td>        
+            <td class="5yearcrime"> -21.3% </td> 
+            <td class="crimeindex"> 54.9 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 43 </td>          
+            <td class="name"> Sarnia </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Small</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2">✓ </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"></td>
+            <td class="good"> ✓  </td> <!--wheather-->
+         <td class="population"> 91,901 </td>          
+            <td class="estunemployment">8.2 </td>        
+            <td class="5yearcrime"> -9.8% </td> 
+            <td class="crimeindex"> 76.8 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 44 </td>          
+            <td class="name"> Niagara </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Small</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2"></td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"></td>
+            <td class="good"> ✓  </td> <!--wheather-->
+         <td class="population"> 87,933 </td>          
+            <td class="estunemployment">7.5 </td>        
+            <td class="5yearcrime"> -22.1% </td> 
+            <td class="crimeindex"> 57.0 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 45 </td>          
+            <td class="name"> Windsor </td>           
+            <td class="province"> Ont. </td>                  
+            <td class="citysize"> Medium</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2"> </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"></td>
+            <td class="good"> ✓  </td> <!--wheather-->
+         <td class="population"> 334,137 </td>          
+            <td class="estunemployment">8.3 </td>        
+            <td class="5yearcrime"> -16.0% </td> 
+            <td class="crimeindex"> 78.4 </td>
+           
+        </tr>
+		<tr>
+            <td class="OverallRank"> 46 </td>          
+            <td class="name"> Montreal </td>           
+            <td class="province"> Que. </td>                  
+            <td class="citysize"> Large</td>          
+            <td class="lowunemployment">  </td>
+            <td class="highincome">  </td>
+  <td class="2">✓ </td> <!--low priced home-->
+            <td class="affordavlehousing"> </td>
+            <td class="3"> </td> <!--affortable rent-->
+            <td class="accesstohealthcare"></td>
+            <td class="good"> ✓  </td> <!--wheather-->
+         <td class="population"> 1,761,430 </td>          
+            <td class="estunemployment">11.6 </td>        
+            <td class="5yearcrime"> -33.4% </td> 
+            <td class="crimeindex"> 72.3 </td>
+           
+        </tr>
+		
+		
+		
+		
+       
+    </tbody>
+</table>
+	
+
+		</div><! --/row -->
+	</div><! --/container -->
+	
+	<div id="social">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-2">
+					<a href="#"><i class="fa fa-dribbble"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="#"><i class="fa fa-twitter"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="#"><i class="fa fa-instagram"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="#"><i class="fa fa-tumblr"></i></a>
+				</div>
+			
+			</div><! --/row -->
+		</div><! --/container -->
+	</div><! --/social -->
+
+	<div id="footerwrap">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-4">
+					<p><b>WEB DESIGNER & DEVELOPER</b></p>
+				</div>
+			
+				<div class="col-lg-4">
+					<p></p>
+				</div>
+				<div class="col-lg-4">
+					<p></p>
+				</div>
+			
+			</div>
+		
+		</div>
+	</div><! --/footerwrap -->
+	
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
